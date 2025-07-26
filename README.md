@@ -23,7 +23,7 @@ An end‑to‑end **ADMET → ML → DFT** pipeline for discovering and ranking 
 
 ```bash
 git clone https://github.com/abdullahchdry/mit_urtc_ache_pipeline.git
-cd mit_urtc_ache_pipeline
+cd urtc_ache_pipeline
 pip install -r requirements.txt
 
 # All folders and raw data (including admet_raw.zip in data/raw/admet_raw/) 
@@ -50,8 +50,4 @@ python scripts/07_compute_final_ranking.py
 - matplotlib
 - chembl_webresource_client
 - ORCA v5.0
-python scripts/04_toxicity_scoring.py
-python scripts/05_generate_orca_inputs.py
-# submit ORCA jobs, place resulting .out files into stability-io/output/
-python scripts/06_parse_dft_gaps.py
-python scripts/07_compute_final_ranking.py
+
