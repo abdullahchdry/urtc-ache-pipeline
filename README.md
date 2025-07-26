@@ -26,9 +26,17 @@ git clone https://github.com/abdullahchdry/urtc-ache-pipeline.git
 cd urtc-ache-pipeline
 pip install -r requirements.txt
 
-# All folders and raw data (including admet_raw.zip in data/raw/admet_raw/) 
-# are included in the repo—no manual setup required.
+```
 
+---
+
+## Clean (recommended)
+Before you start, you can remove any prior outputs to guarantee a fresh run:
+```bash
+rm -rf data/processed/* figures/*
+```
+## Quick start (contd.)
+```bash
 python scripts/01_chembl_retrieval.py
 python scripts/02_admet_filter.py
 python scripts/03_umap_clustering.py
@@ -38,6 +46,8 @@ python scripts/05_generate_orca_inputs.py
 python scripts/06_parse_dft_gaps.py
 python scripts/07_compute_final_ranking.py
 ```
+
+
 ---
 ## Dependencies
 
