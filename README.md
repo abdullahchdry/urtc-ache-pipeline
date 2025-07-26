@@ -37,6 +37,7 @@ python scripts/05_generate_orca_inputs.py
 # run ORCA on HPC, place resulting .out files into stability-io/output/
 python scripts/06_parse_dft_gaps.py
 python scripts/07_compute_final_ranking.py
+```
 
 ---
 
