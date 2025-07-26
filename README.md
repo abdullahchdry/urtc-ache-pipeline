@@ -33,7 +33,7 @@ pip install -r requirements.txt
 ## Clean (recommended)
 Before you start, you can remove any prior outputs to guarantee a fresh run:
 ```bash
-rm data/processed/* figures/*
+rm -rf data/processed/* figures/* stability-io/input/*
 ```
 ## Quick start (contd.)
 ```bash
