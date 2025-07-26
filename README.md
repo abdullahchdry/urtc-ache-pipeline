@@ -42,9 +42,10 @@ python scripts/07_compute_final_ranking.py
 ---
 
 ## Data Layout
-
+```bash
 data/
-├─ raw/admet_raw/admet_raw.csv
+├─ raw
+│   ├─ admet_raw.zip
 ├─ processed/
 │   ├─ admet_filtered.csv
 │   ├─ chembl_cleaned.csv
@@ -67,3 +68,4 @@ scripts/
 ├─ 05_generate_orca_inputs.py
 ├─ 06_parse_dft_gaps.py
 └─ 07_compute_final_ranking.py
+```
