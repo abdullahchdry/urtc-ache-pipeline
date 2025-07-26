@@ -11,10 +11,10 @@ An end‑to‑end **ADMET → ML → DFT** pipeline for discovering and ranking 
 
 1. **01_chembl_retrieval.py** – Fetch ChEMBL AChE inhibitors (IC₅₀ ≤ 100 nM)  
 2. **02_admet_filter.py** – Apply strict ADMET + loose PK filters  
-3. **03_umap_clustering.py** – UMAP embedding & K‑means medoid clustering  
+3. **03_machine_learning.py** – UMAP embedding & K‑means medoid clustering  
 4. **04_toxicity_scoring.py** – Composite toxicity scoring (hERG, DILI, Ames, SkinSens)  
 5. **05_generate_orca_inputs.py** – Generate ORCA v5.0 input files for medoids  
-6. **06_parse_dft_gaps.py** – Parse ORCA outputs for HOMO–LUMO gaps & normalize  
+6. **06_parse_dft.py** – Parse ORCA outputs for HOMO–LUMO gaps & normalize  
 7. **07_compute_final_ranking.py** – Combine ADMET‑distance & sDFT into final ranking  
 
 ---
@@ -22,8 +22,8 @@ An end‑to‑end **ADMET → ML → DFT** pipeline for discovering and ranking 
 ## Quick Start
 
 ```bash
-git clone https://github.com/abdullahchdry/mit_urtc_ache_pipeline.git
-cd urtc_ache_pipeline
+git clone https://github.com/abdullahchdry/urtc-ache-pipeline.git
+cd urtc-ache-pipeline
 pip install -r requirements.txt
 
 # All folders and raw data (including admet_raw.zip in data/raw/admet_raw/) 
